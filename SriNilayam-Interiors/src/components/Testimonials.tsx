@@ -48,19 +48,19 @@ const Testimonials = () => {
     }
   ];
 
-  const nextTestimonial = () => {
+  const nextTestimonial = React.useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
+  }, [testimonials.length]);
 
-  const prevTestimonial = () => {
+  const prevTestimonial = React.useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
-  };
+  }, [testimonials.length]);
 
   // Auto-advance testimonials
   useEffect(() => {
     const interval = setInterval(nextTestimonial, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [nextTestimonial]);
 
   return (
     <section className="py-20 bg-gradient-to-br from-orange-50 to-white">

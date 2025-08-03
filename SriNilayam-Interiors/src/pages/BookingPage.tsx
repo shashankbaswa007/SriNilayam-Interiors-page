@@ -2,9 +2,25 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, User, Home, ArrowRight, ArrowLeft, CheckCircle } from 'lucide-react';
 
+  interface FormData {
+    name: string;
+    email: string;
+    phone: string;
+    projectType: string;
+    propertyType: string;
+    rooms: string[];
+    budget: string;
+    timeline: string;
+    consultationType: string;
+    preferredDate: string;
+    preferredTime: string;
+    address: string;
+    additionalNotes: string;
+  }
+
 const BookingPage = () => {
   const [currentStep, setCurrentStep] = useState(1);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     // Step 1: Personal Info
     name: '',
     email: '',
@@ -25,13 +41,6 @@ const BookingPage = () => {
     additionalNotes: ''
   });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
 
   const handleRoomToggle = (room) => {
     setFormData(prev => ({
@@ -54,7 +63,7 @@ const BookingPage = () => {
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Create email content

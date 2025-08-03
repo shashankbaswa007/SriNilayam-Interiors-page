@@ -4,8 +4,8 @@ import { Eye, X } from 'lucide-react';
 
 const PortfolioPage = () => {
   const [activeFilter, setActiveFilter] = useState('all');
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [selectedImage, setSelectedImage] = useState<any>(null);
 
   const filters = [
     { id: 'all', name: 'All Projects' },
