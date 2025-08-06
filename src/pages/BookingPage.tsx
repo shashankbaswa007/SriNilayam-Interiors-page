@@ -12,7 +12,6 @@
      rooms: [],
      budget: '',
      timeline: '',
--    
 -    // Step 3: Consultation Details
      consultationType: '',
      preferredDate: '',
