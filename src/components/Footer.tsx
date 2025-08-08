@@ -5,7 +5,4 @@
               <div className="text-2xl font-bold text-white">
                 SriNilayam Interiors
               </div>
-+              <div className="text-2xl font-bold text-white">
-+                SriNilayam Interiors
-+              </div>
              </Link>
