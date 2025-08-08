@@ -1,4 +1,3 @@
-@@ .. @@
              {/* Logo */}
              <Link to="/" className="flex items-center space-x-3">
 -              <img 

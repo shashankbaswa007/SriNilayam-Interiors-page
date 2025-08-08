@@ -1,4 +1,3 @@
-@@ .. @@
            <div className="space-y-4">
              <Link to="/" className="inline-block">
 -              <img 

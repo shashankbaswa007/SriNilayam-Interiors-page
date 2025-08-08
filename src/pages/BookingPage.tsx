@@ -1,4 +1,3 @@
-@@ .. @@
    const [currentStep, setCurrentStep] = useState(1);
    const [formData, setFormData] = useState<FormData>({
 -    // Step 1: Personal Info
