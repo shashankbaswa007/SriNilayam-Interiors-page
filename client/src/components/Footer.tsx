@@ -13,6 +13,8 @@ const Footer = () => {
               <img 
                 src="/logo.png" 
                 alt="SriNilayam Interiors Logo" 
+                className="h-12 w-auto brightness-0 invert"
+              />
                 className="h-40 w-auto brightness-0 invert"
               />
             </Link>
