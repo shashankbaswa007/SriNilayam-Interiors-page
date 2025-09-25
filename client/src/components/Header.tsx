@@ -67,8 +67,6 @@ const Header = () => {
                 alt="SriNilayam Interiors Logo" 
                 className="h-16 w-auto drop-shadow-md"
               />
-                className="h-40 w-auto drop-shadow-md"
-              />
             </Link>
 
             {/* Desktop Navigation */}

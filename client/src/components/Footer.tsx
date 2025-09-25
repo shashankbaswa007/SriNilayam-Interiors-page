@@ -15,8 +15,6 @@ const Footer = () => {
                 alt="SriNilayam Interiors Logo" 
                 className="h-12 w-auto brightness-0 invert"
               />
-                className="h-40 w-auto brightness-0 invert"
-              />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
               Creating beautiful, functional spaces that reflect your personality and lifestyle. 
