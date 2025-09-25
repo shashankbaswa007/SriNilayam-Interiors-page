@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock, Send, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 
-  interface FormData {
+interface FormData {
     name: string;
     email: string;
     phone: string;
     projectType: string;
     budget: string;
     message: string;
-  }
+}
 
 const ContactPage = () => {
   const [formData, setFormData] = useState<FormData>({

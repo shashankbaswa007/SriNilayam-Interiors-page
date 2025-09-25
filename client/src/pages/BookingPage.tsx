@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, User, Home, ArrowRight, ArrowLeft, CheckCircle } from 'lucide-react';
 
-  interface FormData {
+interface FormData {
     name: string;
     email: string;
     phone: string;
@@ -16,7 +16,7 @@ import { Calendar, Clock, User, Home, ArrowRight, ArrowLeft, CheckCircle } from 
     preferredTime: string;
     address: string;
     additionalNotes: string;
-  }
+}
 
 const BookingPage = () => {
   const [currentStep, setCurrentStep] = useState(1);

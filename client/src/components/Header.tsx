@@ -62,11 +62,6 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <img 
-                src="/logo.png" 
-                alt="SriNilayam Interiors Logo" 
-                className="h-16 w-auto drop-shadow-md"
-              />
             </Link>
 
             {/* Desktop Navigation */}
