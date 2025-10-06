@@ -68,6 +68,12 @@ const Header = () => {
                 className="h-12 w-auto object-contain"
                 onError={(e) => {
                   console.error('Logo failed to load:', e);
+              <img 
+                src="/Screenshot%202025-06-25%20at%2010.01.56%20AM%20copy%20copy.png" 
+                alt="SriNilayam Interiors Logo" 
+                className="h-12 w-auto object-contain"
+                onError={(e) => {
+                  console.error('Logo failed to load:', e);
                   e.currentTarget.style.display = 'none';
                 }}
                 onLoad={() => console.log('Logo loaded successfully')}
