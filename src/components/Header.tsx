@@ -62,16 +62,6 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <img 
-                src="/Screenshot%202025-06-25%20at%2010.01.56%20AM%20copy%20copy.png" 
-                alt="SriNilayam Interiors Logo" 
-                className="h-12 w-auto object-contain"
-                onError={(e) => {
-                  console.error('Logo failed to load:', e);
-                  e.currentTarget.style.display = 'none';
-                }}
-                onLoad={() => console.log('Logo loaded successfully')}
-              />
               <span className={`text-xl font-bold ${isScrolled ? 'text-orange-500' : 'text-white'}`}>
                 SriNilayam Interiors
               </span>
