@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Calendar, Clock, User, Mail, Phone, MapPin, Home, Palette, Sofa, Bath, Bed, ChefHat, Building } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Calendar, Clock, User, Mail, Phone, MapPin, Hop as Home, Palette, Sofa, Bath, Bed, ChefHat, Building } from 'lucide-react';
 
 interface FormData {
   name: string;
